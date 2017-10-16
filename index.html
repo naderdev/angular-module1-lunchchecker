@@ -6,13 +6,18 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <script src="angular.min.js"></script>
 	  <script type="text/javascript" src="app.js"></script>
+    <style>
+     .message { font-size: 1.3em; font-weight: bold; }
+     body { background-image : url("images/pizza.jpg"); background-repeat: no-repeat;
+       background-size: 100%; color : blue;}
+   </style>
   </head>
-<body ng-app="LunchChecker">
+<body ng-app="LunchChecker" style="background= src='images/pizza.jpg'">
    <div class="container" ng-controller="LunchCheckController">
      <h1>Lunch Checker</h1>
          <div class="form-group">
              <input id="lunch-menu" type="text"
-             placeholder="list comma separated dishes you usually have for lunch"
+             placeholder="list your favorite pizza toppings for lunch"
              class="form-control"
              ng-model="food"
              ng-style="lunchTextBoxColor.style">
